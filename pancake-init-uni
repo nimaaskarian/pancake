@@ -7,8 +7,8 @@ header-includes: |
   \settextfont{Bidad}
   \setlatintextfont{Bidad}
 title:
-author:
 mainauthor:
+author:
 prof:
 logo: $HOME/Pictures/unilogo.png
 institute:
