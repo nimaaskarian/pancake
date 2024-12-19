@@ -5,4 +5,4 @@
 }
 cmd=$1
 shift 1
-. "$(which pandoc-server-$cmd.sh)" "$@"
+. "$(dirname $0)/pandoc-server-$cmd.sh" "$@"

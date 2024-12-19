@@ -10,5 +10,12 @@ ln -s $PWD/pandoc-server*.sh ~/.local/bin/
 ```
 
 you can list the COMMANDs with `pandoc-server.sh list`. you can use your own
-`pandoc-server-COMMAND.sh` file in your PATH too. any file with this name format
-would be assumed a `pandoc-server` command
+`pandoc-server-COMMAND.sh` file in your the same directory in PATH as
+`pandoc-server.sh` too. any file with this name format would be assumed a
+`pandoc-server` command.
+
+by default, all these commands are not executable (so your shell autocomplete
+wouldn't be annoying to use).
+
+be aware of risks this can have (any pandoc-server-COMMAND.sh in PATH is
+executable even if the file doesn't have the execute bit).

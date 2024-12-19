@@ -19,4 +19,4 @@ if [ -f "$NAME" ]; then
 fi
 
 echo "$OPTS" > "$OPTS_FILE"
-printf "%s" "$HEADERS" > "$NAME"
+echo -e "$HEADERS" > "$NAME"
