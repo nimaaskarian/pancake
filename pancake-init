@@ -1,0 +1,22 @@
+[ $# -lt 1 ]  && {
+  >&2 echo "Usage: pancake init INITDIR"
+  exit 1
+}
+
+OPTS_FILE=${PANCAKE_OPTS_FILE:-pandoc-opts}
+OPTS=${PANCAKE_OPTS:---citeproc}
+NAME=${PANCAKE_NAME:-main.md}
+HEADERS=${PANCAKE_HEADERS:-"---\ntitle:\nauthor:\n---\n"}
+
+if [ -f "$OPTS_FILE" ]; then
+  >&2 echo \"$OPTS_FILE\" exists
+  exit 1
+fi
+
+if [ -f "$NAME" ]; then
+  >&2 echo \"$NAME\" exists
+  exit 1
+fi
+
+echo "$OPTS" > "$OPTS_FILE"
+echo -e "$HEADERS" > "$NAME"

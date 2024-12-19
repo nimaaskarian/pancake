@@ -508,11 +508,8 @@ $else$
 \begin{center}
   $if(pretitle)$
   \textbf{$pretitle$}
-
-  {\let\newpage\relax\maketitle}
-  $else$
-  \maketitle
   $endif$
+  {\let\newpage\relax\maketitle}
   \vfill
 
   $if(logo)$
