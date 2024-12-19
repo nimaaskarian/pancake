@@ -6,7 +6,7 @@ using pandoc-server. to install them, you can link (or copy) them to
 your PATH.
 
 ```bash
-ln -s $PWD/pandoc-server*.local/bin/
+ln -s $PWD/pandoc-server* .local/bin/
 ```
 
 you can list the COMMANDs with `pandoc-server list`. you can use your own
