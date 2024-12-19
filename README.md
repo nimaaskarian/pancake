@@ -1,6 +1,6 @@
 a set of pandoc utils to get you going with your pandoc journey.
 
-# Bash scripts (pancake)
+# Bash scripts
 there are a couple of scripts, called pancake-COMMAND. they can be run
 using pancake. to install them, you can link (or copy) them to
 your PATH.
