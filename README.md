@@ -1,4 +1,4 @@
-a set of pandoc utils to get you going with your pandoc journey.
+a set of pandoc utils to make your pandoc journey like a piece of cake.
 
 # Bash scripts
 there are a couple of scripts, called pancake-COMMAND. they can be run
