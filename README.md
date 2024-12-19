@@ -38,3 +38,5 @@ ln -s $PWD/*.latex ~/.local/share/pandoc/templates/
 more variables like `prof`, `mainauthor`, `pretitle`, `institute`, `logo` which
 are customizations for the title page. also supresses the page number for the
 title page.
+there's also a boolean variable available called `latinbibilo` which wraps the
+bibliography in a `\begin{latin}` (xepersian) environment.
