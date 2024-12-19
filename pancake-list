@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 echo -n $PATH | xargs -d : -I {} find {} -maxdepth 1 -name "pancake-*.sh"\
         -printf '%P\n' | sort -u | sed 's/^pancake-\(.*\)/\1/'
 

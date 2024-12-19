@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 [ $# -lt 1 ]  && {
   >&2 echo "Usage: pancake init INITDIR"
   exit 1

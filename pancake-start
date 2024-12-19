@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 [ $# -lt 1 ]  && {
   >&2 echo "Usage: pancake start MDFILE OPTFILE[./pandoc-opts]"
   exit 1

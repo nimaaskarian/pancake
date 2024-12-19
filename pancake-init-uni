@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 export PANCAKE_OPTS="--citeproc --pdf-engine xelatex --template uni.latex"
 export PANCAKE_HEADERS="---
 header-includes: |
