@@ -1,5 +1,5 @@
 [ $# -lt 1 ]  && {
-  >&2 echo "Usage: pandoc-server.sh start MDFILE OPTFILE[./pandoc-opts]"
+  >&2 echo "Usage: pandoc-server start MDFILE OPTFILE[./pandoc-opts]"
   exit 1
 }
 

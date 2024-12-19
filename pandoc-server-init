@@ -1,5 +1,5 @@
 [ $# -lt 1 ]  && {
-  >&2 echo "Usage: pandoc-server.sh init INITDIR"
+  >&2 echo "Usage: pandoc-server init INITDIR"
   exit 1
 }
 

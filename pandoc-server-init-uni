@@ -13,4 +13,4 @@ logo: $HOME/Pictures/unilogo.png
 institute:
 ---
 "
-. "$(dirname "$0")/pandoc-server-init.sh"
+. "$(dirname "$0")/pandoc-server-init"
