@@ -5,9 +5,9 @@
 }
 
 opts=${2:-./pandoc-opts}
-! [ -f "$opts" ] && opts=""
 PID=""
 while true; do
+  ! [ -f "$opts" ] && opts=""
   inotifywait -e modify "$1" "$opts"
   [ "$PID" ] && kill "$PID" > /dev/null 2>&1
   pandoc "$1" $(< $opts) -o "${1%.*}.pdf" &
