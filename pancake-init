@@ -4,9 +4,11 @@
   exit 1
 }
 
-OPTS_FILE=${PANCAKE_OPTS_FILE:-pandoc-opts}
+DIR=${2:-.}
+[ -d "$DIR" ] || mkdir -p "$DIR"
+OPTS_FILE=$DIR/${PANCAKE_OPTS_FILE:-pandoc-opts}
 OPTS=${PANCAKE_OPTS:---citeproc}
-NAME=${PANCAKE_NAME:-main.md}
+MD_FILE=$DIR/${PANCAKE_NAME:-main.md}
 HEADERS=${PANCAKE_HEADERS:-"---\ntitle:\nauthor:\n---\n"}
 
 if [ -f "$OPTS_FILE" ]; then
@@ -14,10 +16,10 @@ if [ -f "$OPTS_FILE" ]; then
   exit 1
 fi
 
-if [ -f "$NAME" ]; then
-  >&2 echo \"$NAME\" exists
+if [ -f "$MD_FILE" ]; then
+  >&2 echo \"$MD_FILE\" exists
   exit 1
 fi
 
 echo "$OPTS" > "$OPTS_FILE"
-echo -e "$HEADERS" > "$NAME"
+echo -e "$HEADERS" > "$MD_FILE"
