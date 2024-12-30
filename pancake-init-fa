@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-export PANCAKE_OPTS="--pdf-engine xelatex"
+export PANCAKE_OPTS="--pdf-engine xelatex $PANCAKE_OPTS"
 export PANCAKE_HEADERS="---
 header-includes: |
   \usepackage{hyperref}

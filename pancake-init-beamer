@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+export PANCAKE_OPTS="-t beamer"
+. "$(dirname "$0")/pancake-init"

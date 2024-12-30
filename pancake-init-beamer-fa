@@ -1,0 +1,2 @@
+export PANCAKE_OPTS="-t beamer"
+. "$(dirname "$0")/pancake-init-fa"
