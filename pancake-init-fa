@@ -7,7 +7,7 @@ header-includes: |
   \settextfont{Bidad}
   \setlatintextfont{Bidad}
 title:
-author:
+author: $PANCAKE_AUTHOR
 ---
 "
 . "$(dirname "$0")/pancake-init"

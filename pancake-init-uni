@@ -8,10 +8,10 @@ header-includes: |
   \setlatintextfont{Bidad}
 title:
 mainauthor:
-author:
+author: $PANCAKE_AUTHOR
 prof:
 logo: $HOME/Pictures/unilogo.png
-institute:
+institute: $PANCAKE_INSTITUTE
 ---
 "
 . "$(dirname "$0")/pancake-init"
