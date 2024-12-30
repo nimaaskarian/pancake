@@ -4,11 +4,12 @@
   exit 1
 }
 
-DIR=${2:-.}
+DIR=$1
+PANCAKE_NAME=${2:-$PANCAKE_NAME}
 [ -d "$DIR" ] || mkdir -p "$DIR"
 OPTS_FILE=$DIR/${PANCAKE_OPTS_FILE:-pandoc-opts}
 OPTS=${PANCAKE_OPTS:---citeproc}
-MD_FILE=$DIR/${PANCAKE_NAME:-main.md}
+MD_FILE=$DIR/${PANCAKE_NAME:-main}.md
 HEADERS=${PANCAKE_HEADERS:-"---\ntitle:\nauthor:\n---\n"}
 
 if [ -f "$OPTS_FILE" ]; then

@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+export PANCAKE_OPTS="--pdf-engine xelatex"
+export PANCAKE_HEADERS="---
+header-includes: |
+  \usepackage{hyperref}
+  \usepackage{xepersian}
+  \settextfont{Bidad}
+  \setlatintextfont{Bidad}
+title:
+author:
+---
+"
+. "$(dirname "$0")/pancake-init"
